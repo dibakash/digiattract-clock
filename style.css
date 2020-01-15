@@ -1,6 +1,12 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  overflow: hidden;
+}
 .clockbg {
-  width: 100%;
-  height: 1vh;
+  width: 50vh;
+  height: 50vh;
   background-color: brown;
   position: absolute;
   top: 50%;
@@ -15,8 +21,8 @@
 
 .clock-container {
   position: absolute;
-  width: 540px;
-  height: 540px;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
   background-color: #fff;
   z-index: 2;
