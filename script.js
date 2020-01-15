@@ -26,4 +26,5 @@ function setClock() {
   rotateHands(minH, minR * 360);
   rotateHands(hourH, hourR * 360);
 }
+setClock();
 setInterval(setClock, 1000);
