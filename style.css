@@ -34,7 +34,7 @@ body {
 
 .secH {
   width: 3px;
-  height: 300px;
+  height: 50%;
   background-color: black;
   bottom: 50%;
   left: 50%;
@@ -43,7 +43,7 @@ body {
 }
 .minH {
   width: 9px;
-  height: 300px;
+  height: 50%;
   background-color: black;
   bottom: 50%;
   left: 50%;
@@ -53,7 +53,7 @@ body {
 }
 .hourH {
   width: 15px;
-  height: 240px;
+  height: 33%;
   background-color: black;
   bottom: 50%;
   left: 50%;
