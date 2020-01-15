@@ -21,8 +21,8 @@ body {
 
 .clock-container {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 81%;
+  height: 81%;
   border-radius: 50%;
   background-color: #fff;
   z-index: 2;
@@ -76,7 +76,7 @@ body {
 
 /* dial */
 .dial {
-  --radius: 720px;
+  --radius: 100%;
   --rotationD: 0;
   width: var(--radius);
   height: var(--radius);
@@ -115,7 +115,7 @@ body {
 .numbr {
   position: absolute;
   transform: rotate(calc(-1deg * var(--rotationD)));
-  font-size: 3em;
+  font-size: 2.4em;
   font-weight: 900;
   margin-top: 15px;
 }
