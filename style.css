@@ -1,0 +1,120 @@
+.clockbg {
+  width: 780px;
+  height: 780px;
+  background-color: brown;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 12px;
+  box-shadow: grey 3px 3px 12px;
+}
+
+.clock-container {
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 2;
+  --rotateH: 0;
+}
+.hand {
+  position: absolute;
+}
+
+.secH {
+  width: 3px;
+  height: 300px;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: rotate(calc(var(--rotateH) * 1deg)) translateX(-50%);
+}
+.minH {
+  width: 9px;
+  height: 300px;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translateX(-50%) rotate(calc(var(--rotateH) * 1deg));
+  border-radius: 9px 9px 0 0;
+}
+.hourH {
+  width: 15px;
+  height: 240px;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translateX(-50%) rotate(calc(var(--rotateH) * 1deg));
+  border-radius: 9px 9px 0 0;
+}
+.clock-container:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: brown;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* dial */
+.dial {
+  --radius: 720px;
+  --rotationD: 0;
+  width: var(--radius);
+  height: var(--radius);
+  background-color: blanchedalmond;
+  position: absolute;
+  border-radius: 50%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.tick {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  display: grid;
+  justify-items: center;
+  transform: rotate(calc(var(--rotationD) * 1deg));
+  padding: 30px;
+}
+.tick:before {
+  content: "";
+  background-color: cadetblue;
+  position: absolute;
+  border-radius: 50%;
+}
+.tickMain:before {
+  width: 9px;
+  height: 9px;
+}
+.tickMid:before {
+  width: 6px;
+  height: 6px;
+}
+
+.numbr {
+  position: absolute;
+  transform: rotate(calc(-1deg * var(--rotationD)));
+  font-size: 3em;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.logo {
+  position: absolute;
+  width: 30%;
+}
