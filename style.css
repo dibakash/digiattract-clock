@@ -21,8 +21,8 @@ body {
 
 .clock-container {
   position: absolute;
-  width: 81%;
-  height: 81%;
+  width: 75%;
+  height: 75%;
   border-radius: 50%;
   background-color: #fff;
   z-index: 2;
@@ -80,7 +80,7 @@ body {
   --rotationD: 0;
   width: var(--radius);
   height: var(--radius);
-  background-color: blanchedalmond;
+  background-color: #e7cda6;
   position: absolute;
   border-radius: 50%;
   display: grid;
@@ -89,13 +89,13 @@ body {
 }
 .tick {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: grid;
   justify-items: center;
   transform: rotate(calc(var(--rotationD) * 1deg));
-  padding: 30px;
+  /* padding: 30px; */
 }
 .tick:before {
   content: "";
@@ -104,20 +104,20 @@ body {
   border-radius: 50%;
 }
 .tickMain:before {
-  width: 9px;
-  height: 9px;
+  width: 0.5em;
+  height: 0.5em;
 }
 .tickMid:before {
-  width: 6px;
-  height: 6px;
+  width: 0.3em;
+  height: 0.3em;
 }
 
 .numbr {
   position: absolute;
   transform: rotate(calc(-1deg * var(--rotationD)));
-  font-size: 2.4em;
+  font-size: 1.5em;
   font-weight: 900;
-  margin-top: 15px;
+  margin-top: 0.5em;
 }
 
 .logo {
