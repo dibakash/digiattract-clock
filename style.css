@@ -2,7 +2,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(#ffcef3, #ffb9a2);
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .clockbg {
   width: 50vh;
@@ -21,21 +21,23 @@ body {
 
 .clock-container {
   position: absolute;
-  width: 75%;
-  height: 75%;
+  width: 72%;
+  height: 72%;
   border-radius: 50%;
   background-color: #fff;
   z-index: 2;
   --rotateH: 0;
+  box-shadow: brown 0px 0px 3px;
 }
 .hand {
   position: absolute;
+  box-shadow: grey 0px 0px 3px;
 }
 
 .secH {
   width: 3px;
   height: 50%;
-  background-color: black;
+  background-color: brown;
   bottom: 50%;
   left: 50%;
   transform-origin: 50% 100%;
@@ -80,7 +82,7 @@ body {
   --rotationD: 0;
   width: var(--radius);
   height: var(--radius);
-  background-color: #e7cda6;
+  background-color: #ffeed5;
   position: absolute;
   border-radius: 50%;
   display: grid;
@@ -95,13 +97,14 @@ body {
   display: grid;
   justify-items: center;
   transform: rotate(calc(var(--rotationD) * 1deg));
-  /* padding: 30px; */
 }
 .tick:before {
   content: "";
-  background-color: cadetblue;
+  background-color: lightcoral;
+  box-shadow: cadetblue 0px 0px 1px;
   position: absolute;
   border-radius: 50%;
+  margin-top: 3px;
 }
 .tickMain:before {
   width: 0.5em;
