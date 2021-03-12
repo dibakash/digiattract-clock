@@ -4,6 +4,7 @@ body {
   background-image: linear-gradient(#ffcef3, #ffb9a2);
   overflow: hidden !important;
 }
+/* clock background */
 .clockbg {
   width: 50vh;
   height: 50vh;
