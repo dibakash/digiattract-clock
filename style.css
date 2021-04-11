@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(#ffcef3, #ffb9a2);
+  background-image: linear-gradient(#fadff3, #ffb9a2);
   overflow: hidden !important;
 }
 /* clock background */
