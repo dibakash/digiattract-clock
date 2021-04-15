@@ -2,4 +2,4 @@
 
 Analogue Clock with simple javascript, css and html
 
-updated as on 4th April 2021
+updated as on 15th April 2021
