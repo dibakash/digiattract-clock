@@ -2,4 +2,4 @@
 
 Analogue Clock with simple javascript, css and html
 
-Need Future Updates
+Need minor future updates: style, and load up;
