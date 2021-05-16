@@ -16,7 +16,7 @@ function rotateHands(hands, ticks) {
   hands.style.setProperty("--rotateH", ticks);
 }
 
-function setClock() {
+function setClockTime() {
   var clockTime = new Date();
   var secR = clockTime.getSeconds() / 60;
   var minR = (secR + clockTime.getMinutes()) / 60;
@@ -26,5 +26,5 @@ function setClock() {
   rotateHands(minH, minR * 360);
   rotateHands(hourH, hourR * 360);
 }
-setClock();
-setInterval(setClock, 1000);
+setClockTime();
+setInterval(setClockTime, 1000);
