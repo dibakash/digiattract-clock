@@ -2,5 +2,5 @@
 
 Analogue Clock with simple javascript, css and html
 
-Need minor future updates: style, and starting load up
+Need minor and future updates: style, and starting load up
 ....
